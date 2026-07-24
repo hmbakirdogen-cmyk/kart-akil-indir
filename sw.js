@@ -1,10 +1,10 @@
 /*
  * NE: Her web exportunda HTML parmak iziyle değişen KartAkıl PWA kabuk sürümüdür.
  * NEDEN: Service worker dosyası değişmezse tarayıcı yeni uygulama paketini görünür bir güncelleme olarak algılamaz.
- * NASIL: pwa-hazirla.mjs ef038e739d7c yer tutucusunu export HTML'inin kısa SHA-256 özetiyle değiştirir.
+ * NASIL: pwa-hazirla.mjs 0688c2692023 yer tutucusunu export HTML'inin kısa SHA-256 özetiyle değiştirir.
  * YAN ETKİ: Yeni deploy eski KartAkıl kabuk cache'ini temizler; Supabase ve diğer projelerin cache'lerine dokunmaz.
  */
-const CACHE = "kartakil-kabuk-ef038e739d7c";
+const CACHE = "kartakil-kabuk-0688c2692023";
 
 self.addEventListener("install", () => {
   self.skipWaiting();
